@@ -1,10 +1,10 @@
 /**
- * BibleForge
+ * BibleForge Installer
  *
  * @date    12-15-10
- * @version 0.2 alpha
+ * @version 0.1 alpha
  * @link    http://BibleForge.com
- * @license Reciprocal Public License 1.5 (RPL1.5)
+ * @license MIT License
  * @author  BibleForge <info@bibleforge.com>
  */
 
@@ -69,7 +69,7 @@ h1, h2 {
     opacity: 1;
 }
 
-/* Initialy, this element will be invisible.  It will be displayed if a password is needed. */
+/* Initially, this element will be invisible.  It will be displayed if a password is needed. */
 #database_el {
     display: none;
 }
