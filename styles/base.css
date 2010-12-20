@@ -1,0 +1,132 @@
+/**
+ * BibleForge
+ *
+ * @date    12-15-10
+ * @version 0.2 alpha
+ * @link    http://BibleForge.com
+ * @license Reciprocal Public License 1.5 (RPL1.5)
+ * @author  BibleForge <info@bibleforge.com>
+ */
+
+html, body {
+    margin:  5px 0;
+    padding: 0;
+    border:  0;
+    
+    width: 100%;
+    
+    background:	#FFF;
+}
+
+.container {
+    margin: 0 auto;
+    
+    padding: 10px;
+    
+    max-width: 800px;
+    min-width: 200px;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: #A7A7A7 #CACACA #C3C3C3 #A1A19B;
+    /* Rounded corners for Mozilla */
+    -moz-border-radius: 15px;
+    /* Rounded corners for Opera 10.5+, IE 9+, WebKit 532.5+ (Chrome 4, Safari 5), Gecko 2 (Mozilla 4.0) */
+    border-radius:      15px;
+    
+    font-family: Verdana, 'BibleForge Sans', 'Bitstream Vera Sans', 'DejaVu Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    
+    font-weight: normal;
+    font-size:   50px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h1, h2 {
+    font-family: 'Palatino Linotype', Palatino, TexGyrePagella, 'TeX Gyre Pagella', 'URWPalladioL', 'Book Antiqua', 'Times new Roman', Times, serif;
+}
+
+.question {
+    font-size: 12px;
+    text-align: center;
+    
+    cursor: pointer;
+    
+    opacity: 0.4;
+    
+    -moz-transition:    opacity .5s;
+    -webkit-transition: opacity .5s;
+    -o-transition:      opacity .5s;
+}
+
+.question:hover {
+    opacity: 1;
+}
+
+/* Initialy, this element will be invisible.  It will be displayed if a password is needed. */
+#database_el {
+    display: none;
+}
+
+#install_el {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+button {
+   border: 1px solid #8EC1DA;
+   
+   border-radius:      4px;
+   -moz-border-radius: 4px;
+   
+   background-color: rgba(221, 238, 246, .3);
+   
+   /* Opera 10.5/Mozilla 4.0 */
+   box-shadow:         inset 0 1px 3px rgba(255, 255, 255, .5), inset 0 -15px 1px rgba(203, 230, 242, .3), 0 0 3px rgba(142, 193, 218, .3);
+   -webkit-box-shadow: inset 0 1px 3px rgba(255, 255, 255, .5), inset 0 -15px 1px rgba(203, 230, 242, .3), 0 0 3px rgba(142, 193, 218, .3);
+   -moz-box-shadow:    inset 0 1px 3px rgba(255, 255, 255, .5), inset 0 -15px 1px rgba(203, 230, 242, .3), 0 0 3px rgba(142, 193, 218, .3);
+   
+   color:       #3985A8;
+   text-shadow: 0 1px #FFF;
+   
+   padding: 5px 14px;
+   outline: 0;
+   
+    /* Fade the background color on mouse down. */
+    /* Transition for Mozilla (Firefox 4.0+) */
+    -moz-transition:    background-color .1s;
+    /* Transition for WebKit */
+    -webkit-transition: background-color .1s;
+    /* Transition for Opera 10.5+ */
+    -o-transition:      background-color .1s;
+    
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: rgba(221, 238, 246, .6);
+}
+
+/**
+ * Emulate button pressing.
+ *
+ * @note This does not work in IE.
+ */
+button:active {
+    /*TODO: Determine if it would be better just to change the text shadow color.  (Opera already moves the text.) */
+    padding: 6px 13px 4px 15px;
+    
+    background-color: #E1E1FF;
+}
+
+/* Remove the ugly dashed border on the text of buttons in Mozilla when clicked. */
+button::-moz-focus-inner {
+    border: 0;
+}
